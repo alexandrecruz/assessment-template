@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>English - Reading - Question 20</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/bulma/css/bulma.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- scripts -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.option').on('click', function(){
+          var obj = $(this).closest('.option[data-answer]');
+          var question = $(obj).data('question');
+
+          // unmark answer for this question
+          $('.option[data-question="'+question+'"]')
+            .find('input:radio').prop('checked', false);
+
+          // mark selected one
+          obj.find('input:radio').prop('checked', true);
+
+          // add active class to mark() holder
+          $('.option[data-question="'+question+'"]').removeClass('active');
+          obj.addClass('active');
+        })
+      });
+    </script>
+  </head>
+  <body>
+
+    <!-- Assessment Container -->
+    <div class="container">
+      <h2 class="spaced-10">
+        Reading - Text Question
+        <span class="is-pulled-right">
+          20/25
+        </span>
+      </h2>
+
+      <progress class="progress is-warning test-progress" value="30" max="100"></progress>
+    </div>
+
+    <div class="is-white">
+      <div class="container spaced-20">
+        <div class="content is-large">
+          <!-- content -->
+          <h3 class="spaced-10">Looking atthe picture, what kind of answer could you give??</h3>
+
+          <p>Officia nisi laborum sint et pariatur cupidatat aute reprehenderit sint non ullamco dolore commodo quis ad sint.
+          </p>
+          <p>
+            Exercitation minim eu Lorem ipsum cupidatat esse consectetur amet deserunt cillum cupidatat proident est ex ipsum. Reprehenderit minim Lorem adipisicing id dolor adipisicing anim sunt cupidatat proident officia officia voluptate cillum velit incididunt. Ex non Lorem voluptate deserunt elit dolore laboris velit. Magna tempor occaecat magna Lorem exercitation dolore commodo non minim.</p>
+
+          <form action="#" novalidate>
+
+            <div class="columns is-multiline single-option">
+
+              <!-- option block -->
+              <div class="column is-12">
+                <div class="option option-text" data-question="20" data-answer="632">
+                  <i class="fa fa-circle-thin"></i>
+                  <i class="fa fa-circle"></i>
+                  <input type="radio" name="question" value="632">
+                  <p>Lorem Ipsum Dolor sit Amet isabd saduhasid sa</p>
+                 </div>
+              </div>
+              <!-- /option block -->
+
+              <div class="column is-12">
+                <div class="option option-text" data-question="20" data-answer="633">
+                  <i class="fa fa-circle-thin"></i>
+                  <i class="fa fa-circle"></i>
+                  <input type="radio" name="question" value="633">
+                  <p>Lorem Ipsum Dolor sit Amet isabd saduhasid sa</p>
+                 </div>
+              </div>
+
+              <div class="column is-12">
+                <div class="option option-text" data-question="20" data-answer="634">
+                  <i class="fa fa-circle-thin"></i>
+                  <i class="fa fa-circle"></i>
+                  <input type="radio" name="question" value="634">
+                  <p>Lorem Ipsum Dolor sit Amet isabd saduhasid sa</p>
+                 </div>
+              </div>
+
+              <div class="column is-12">
+                <div class="option option-text" data-question="20" data-answer="635">
+                  <i class="fa fa-circle-thin"></i>
+                  <i class="fa fa-circle"></i>
+                  <input type="radio" name="question" value="635">
+                  <p>Lorem Ipsum Dolor sit Amet isabd saduhasid sa</p>
+                 </div>
+              </div>
+
+            </div><!-- /block holder -->
+
+            <p class="control">
+              <div class="button is-pulled-right is-medium is-warning upcase">
+                Continue
+              </div>
+              <span class="is-clearfix"></span>
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
