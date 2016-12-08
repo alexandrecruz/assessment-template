@@ -1,0 +1,104 @@
+.test-progress {
+  margin-bottom: -5px;
+  position: relative;
+}
+
+.progress.is-rose::-webkit-progress-value {
+  background: #CD5C5C;
+}
+
+.progress.is-rose::-moz-progress-value {
+  background: #CD5C5C;
+}
+
+
+/*options*/
+
+.single-option .option {
+  background-color: #eee;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.single-option .option input[type="radio"] {
+  display: none;
+}
+
+.single-option .option.active {
+  background-color: lightblue;
+}
+
+/*icon states*/
+
+.option-audio.active .fa-circle-thin,
+.option-audio  .fa-circle {
+  display: none;
+}
+
+.option-audio.active .fa-circle,
+.option-audio  .fa-circle-thin {
+  display: block;
+}
+
+/*audio specific*/
+
+.single-option .option.option-audio {
+  padding: 20px 20px 20px 50px;
+  line-height: 30px;
+  height: 30px;
+  box-sizing: content-box;
+}
+
+.option.option-audio i.fa {
+  margin-left: -33px;
+  line-height: 30px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-family: 'FontAwesome'
+}
+
+.option.option-audio audio {
+  display: inline-block;
+  height: 30px;
+  float: right;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .single-option .option.option-audio {
+    padding: 20px 10px 20px 60px;
+  }
+
+  .option.option-audio i.fa {
+    margin-left: -40px;
+  }
+}
+
+/*text specifc*/
+
+.option.option-text {
+  height: auto;
+}
+
+.option.option-text p {
+  text-align: left;
+  line-height: 1.3em;
+}
+
+.option.option-text i.fa {
+  display: none;
+}
+
+.content img {
+  display: block;
+  margin: 20px auto 40px;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px dashed #ddd;
+  border-radius: 5px;
+}
