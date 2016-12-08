@@ -14,19 +14,24 @@
 
 /*options*/
 
-.single-option .option {
+.option {
   background-color: #eee;
-  padding: 20px;
+  padding: 20px 20px 20px 50px;
+  line-height: 30px;
+  height: 30px;
+  box-sizing: content-box;
   cursor: pointer;
 }
 
-.single-option .option input[type="radio"] {
+.option.active {
+  background-color: lightblue;
+}
+
+.option input[type="radio"],
+.option input[type="checkbox"] {
   display: none;
 }
 
-.single-option .option.active {
-  background-color: lightblue;
-}
 
 /*icon states*/
 
@@ -42,12 +47,6 @@
 
 /*audio specific*/
 
-.single-option .option.option-audio {
-  padding: 20px 20px 20px 50px;
-  line-height: 30px;
-  height: 30px;
-  box-sizing: content-box;
-}
 
 .option.option-audio i.fa {
   margin-left: -33px;
@@ -94,11 +93,8 @@
   display: none;
 }
 
-.content img {
-  display: block;
-  margin: 20px auto 40px;
-  max-width: 100%;
-  padding: 10px;
-  border: 1px dashed #ddd;
-  border-radius: 5px;
+
+/*multiple option*/
+.multiple-option .option input[type="checkbox"] {
+  /*display: none;*/
 }
