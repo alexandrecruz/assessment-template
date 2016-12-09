@@ -17,8 +17,6 @@
 .option {
   background-color: #eee;
   padding: 20px 20px 20px 50px;
-  line-height: 30px;
-  height: 30px;
   box-sizing: content-box;
   cursor: pointer;
 }
@@ -81,12 +79,17 @@
 /*text specifc*/
 
 .option.option-text {
+  width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .option.option-text p {
-  text-align: left;
   line-height: 1.3em;
+  width: 100%;
+  text-align: center;
 }
 
 .option.option-text i.fa {

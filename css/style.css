@@ -174,3 +174,8 @@ p {
 .is-relative {
   position: relative;
 }
+
+.stretch {
+  display: flex;
+  align-items: stretch;
+}
