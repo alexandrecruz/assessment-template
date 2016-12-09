@@ -115,14 +115,25 @@
 }
 
   .tabular-option {
+    position: relative;
     display: inline-block;
-    width: calc(100%/3);
     text-align: center;
-    font-size: 20px;
     padding: 10px 0;
     box-sizing: border-box;
     border-left: 1px solid white;
     height: auto;
+    flex-grow: 1;
+  }
+
+  .tabular-option > span {
+    /*-webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=30);*/
+    display: block;
+    font-size: 14px;
   }
 
   .tabular-option.active {
@@ -130,7 +141,7 @@
   }
 
   .tabular-option-question {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: normal;
   }
 
