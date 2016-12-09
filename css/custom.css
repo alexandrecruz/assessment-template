@@ -129,13 +129,13 @@
     background-color: lightblue;
   }
 
-  .tabular-option-text {
+  .tabular-option-question {
     font-size: 19px;
     font-weight: normal;
   }
 
 @media screen and (max-width: 550px) {
-  .tabular-display {  
+  .tabular-display {
     display: flex;
     flex-direction: column-reverse;
   }
