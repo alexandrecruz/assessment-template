@@ -25,7 +25,7 @@
   background-color: lightblue;
 }
 
-.option:hover {
+.option:hover:not(.active) {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -165,21 +165,60 @@
 
 /*ruler specific*/
 
+table.multiple-option {
+  border: 1px solid #bbb;
+  border-collapse: separate;
+  font-size: 11px;
+}
+
 .option-ruler {
-  padding: 12px 10px;
-  border-right: 2px dashed white;
+  padding: 10px 6px;
+  border-right: 1px solid #bbb;
+  white-space: nowrap;
+  font-size: 1.1em
 }
 
 .option-ruler-text {
-  font-size: 16px;
-  border-left: 1px solid black;
+  border-right: 1px solid #ccc;
   padding: 6px;
+  vertical-align: middle;
 }
 
-.option-ruler-text > div {
-  display: flex;
-  align-items: center;
+tr > td:last-child .option-ruler,
+tr > td:last-child {
+  border-right: none;
 }
-.option-ruler-text > div > p {
 
+
+#width-notice { display: none }
+@media screen and (max-width: 499px) and (orientation: portrait) {
+  #width-notice {
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background: #eee;
+    z-index: 9999;
+  }
+
+  #width-notice p {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: 600;
+  }
+
+  #width-notice i.fa {
+    font-size: 100px;
+    color: #ddd;
+    z-index: 1;
+  }
+
+  #width-notice span {
+    margin-top: -100px;
+    display: block;
+  }
 }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Generic - Multiple Options</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/bulma/css/bulma.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- scripts -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="multiple.js"></script>
+  </head>
+  <body>
+
+    <!-- Assessment Container -->
+    <div class="container">
+      <h2 class="spaced-10">
+        Reading - Text Question
+        <span class="is-pulled-right">
+          20/25
+        </span>
+      </h2>
+
+      <progress class="progress is-warning test-progress" value="30" max="100"></progress>
+    </div>
+
+    <div class="is-white">
+      <div class="container spaced-20">
+        <div class="content is-large">
+          <!-- content -->
+          <h3 class="spaced-10">Looking at the picture, what kind of answer could you give??</h3>
+
+          <p>Officia nisi laborum sint et pariatur cupidatat aute reprehenderit sint non ullamco dolore commodo quis ad sint.
+          </p>
+
+          <form action="#" novalidate>
+
+            <!-- requires min width of 500 px -->
+            <div id="width-notice" class="is-hiddenn">
+              <p>
+                <i class="fa fa-rotate-right"></i>
+                <span>Please rotate your device</span>
+              </p>
+            </div>
+
+            <!-- Com atributo 'data-limit', permite todas as opções -->
+            <table class="multiple-option"
+              data-min="1" data-max="1" data-question="2"
+              data-device-width="500">
+              <tbody>
+                <tr>
+                  <td colspan="14" class="has-text-centered option-ruler-text">
+                    Nunca é verdadeiro para mim
+                  </td>
+                  <td colspan="14" class="has-text-centered option-ruler-text">
+                    Ocasionalmente é verdadeiro para mim
+                  </td>
+                  <td colspan="10" class="has-text-centered option-ruler-text">
+                    Normalmente é verdadeiro para mim
+                  </td>
+                  <td colspan="10" class="has-text-centered option-ruler-text">
+                    Sempre é verdadeiro para mim
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="6">
+                    <div class="option option-ruler" data-question="20">
+                      <input type="checkbox" name="question[20]" value="632">
+                      <p class="has-text-centered">Nota 1</p>
+                    </div>
+                  </td>
+                  <td colspan="9">
+                    <div class="option option-ruler" data-question="20">
+                      <input type="checkbox" name="question[20]" value="633">
+                      <p class="has-text-centered">Nota 2</p>
+                    </div>
+                  </td>
+                  <td colspan="9">
+                    <div class="option option-ruler" data-question="20">
+                      <input type="checkbox" name="question[20]" value="634">
+                      <p class="has-text-centered">Nota 3</p>
+                    </div>
+                  </td>
+                  <td colspan="9">
+                    <div class="option option-ruler" data-question="20">
+                      <input type="checkbox" name="question[20]" value="635">
+                      <p class="has-text-centered">Nota 4</p>
+                    </div>
+                  </td>
+                  <td colspan="6">
+                    <div class="option option-ruler" data-question="20">
+                      <input type="checkbox" name="question[20]" value="636">
+                      <p class="has-text-centered">Nota 5</p>
+                    </div>
+                  </td>
+                  <td colspan="8">
+                    <div class="option option-ruler" data-question="20">
+                      <input type="checkbox" name="question[20]" value="637">
+                      <p class="has-text-centered">Nota 6</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+            <p class="control">
+              <div class="button button-submit is-pulled-right is-medium is-warning upcase" disabled>
+                Continue
+              </div>
+              <span class="is-clearfix"></span>
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

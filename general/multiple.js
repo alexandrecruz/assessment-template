@@ -15,20 +15,29 @@ $(document).ready(function(){
 
     // if checked, uncheck just. No need to
     // validate limit because its decreasing
-    if(checked) {
-      obj.removeClass('active');
-      obj.find('input:checkbox').prop('checked', false);
-    } else {
-      // if not checked AND is above the allowed answer limit,
-      // THEN check the option for user
+    if(max == 1){
+      $('.option[data-question="'+question_id+'"] input:checked').prop('checked', false);
+      $('.option[data-question="'+question_id+'"].active').removeClass('active');
+
       obj.addClass('active');
       obj.find('input:checkbox').prop('checked', true);
+    } else {
+      if(checked) {
+        obj.removeClass('active');
+        obj.find('input:checkbox').prop('checked', false);
+      } else if(!checked && selected < max) {
+        // if not checked AND is above the allowed answer limit,
+        // THEN check the option for user
+        obj.addClass('active');
+        obj.find('input:checkbox').prop('checked', true);
+      }
     }
+
+
 
     // recalculate selected items after checking/unchecking
     var selected = $('.option[data-question="'+question_id+'"] input:checked').length;
     if (selected >= min && selected <= max) {
-      // valid answers, hide error message
       $('.button-submit').attr('disabled', false);
     } else {
       $('.button-submit').attr('disabled', true);
