@@ -25,6 +25,10 @@
   background-color: lightblue;
 }
 
+.option:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .option input[type="radio"],
 .option input[type="checkbox"] {
   display: none;
@@ -157,4 +161,25 @@
   .tabular-display > .column {
     width: 100% !important;
   }
+}
+
+/*ruler specific*/
+
+.option-ruler {
+  padding: 12px 10px;
+  border-right: 2px dashed white;
+}
+
+.option-ruler-text {
+  font-size: 16px;
+  border-left: 1px solid black;
+  padding: 6px;
+}
+
+.option-ruler-text > div {
+  display: flex;
+  align-items: center;
+}
+.option-ruler-text > div > p {
+
 }

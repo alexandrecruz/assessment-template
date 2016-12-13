@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="../bower_components/bulma/css/bulma.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/timer.css">
 
     <!-- scripts -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="timer.js" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('.option').on('click', function(){
@@ -44,6 +46,9 @@
       </h2>
 
       <progress class="progress is-warning test-progress" value="30" max="100"></progress>
+      <div class="assessment-timer">
+        <span class="assessment-timer-value">03:02</span>
+      </div>
     </div>
 
     <div class="is-white">
@@ -54,7 +59,7 @@
 
           <form action="#" novalidate>
 
-            <div class="columns is-multiline single-option">
+            <div class="columns is-white is-multiline single-option">
 
               <!-- option block -->
               <div class="column is-6 stretch">
